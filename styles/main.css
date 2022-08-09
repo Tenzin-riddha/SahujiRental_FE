@@ -1,0 +1,217 @@
+@import url(library.css);
+@import url(homepage.css);
+@import url(responsive.css);
+@import url(loginsignup.css);
+@import url(browseCategories.css);
+@import url(searchProducts.css);
+@import url(productPage.css);
+@import url(bookingDone.css);
+::-ms-reveal {
+  display: none;
+}
+/* navbar */
+.navbar-main {
+  height: 160px;
+  width: 100%;
+  /* padding: 0px 328px; */
+  margin: 0;
+  margin-bottom: 28px;
+  background: #fff;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  /* align-items: center; */
+}
+.navbar-top {
+  height: 100px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1270px;
+}
+.navbar-bot {
+  height: 60px;
+  background: #43418A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-bot .nav-bot-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar-bot .nav-bot-link:hover {
+  /* transition: all 50ms ease; */
+  transform: scale(1.1);
+  /* border-bottom: solid #fff 2px; */
+}
+.nav-logo {
+  height: 60px;
+  width: 60px;
+}
+.nav-logo-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+.main-content{
+  min-height: 70vh;
+}
+/* searchbar */
+.text-input{
+  height: 50px;
+  margin: 0;
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ADB0BF;
+  padding-left: 13px;
+}
+.nav-searchbar{
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #adb0bf;
+  width: 450px;
+  
+}
+.text-input:focus {
+  border: 1px solid #dcb55a;
+  box-shadow: none;
+  color: #7C8199;
+  text-shadow: none;
+  outline: none;
+}
+.text-input:focus + .btn-muted{
+  border: 1px solid #dcb55a;
+  box-shadow: none;
+  color: #43418A;
+  text-shadow: none;
+  outline: none;
+}
+.navbar-top > a:hover img,.navbar-top > a:hover label {
+  cursor: pointer;
+}
+.btn-muted{
+  margin: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #efeff2;
+  border: 1px solid #adb0bf;
+  border-radius: 0px 4px 4px 0px;
+  color: #43418A;
+}
+.btn-muted:hover{
+  order: solid#43418A 2px;
+  background-color: #43418A;
+  border: 1px solid #43418A;
+  opacity: 0.8;
+  color: #fff;
+  outline: none;
+}
+.btn-muted:hover span{
+  color: #fff;
+}
+
+/* 'go back/ forward' button */
+.btn-for-back{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  margin-bottom: 16px;
+  margin-left: -12px;
+  transition: all 0.3s ease;
+  border: none;
+}
+.btn-for-back span{
+  color: #43418A;
+}
+.btn-for-back > .material-symbols-rounded {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: -4px;
+  transition: all 0.3s ease;
+}
+.btn-for-back:hover {
+  color: #7C8199;
+  transition: all 0.3s ease;
+  border: none;
+}
+.btn-for-back:hover > .material-symbols-rounded {
+  color: #7C8199;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: -8px;
+  margin-right: 0px;
+  transition: all 0.3s ease;
+}
+.btn-for-back:focus {
+  border: none;
+  background:none;
+  opacity: 0.8;
+  filter: none;
+  box-shadow: none;
+  text-decoration: underline;
+}
+/* END -- 'go back/ forward' button */
+.logo-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* width: 80%; */
+  line-height: 45px;
+  padding-left: 6px 12px;
+}
+.form-check-input{
+  accent-color: #43418A;
+  /* background-color: #43418A; */
+}
+.form-check-input :checked{
+  accent-color: #43418A;
+  background-color: #43418A !important;
+  color: #43418A;
+
+}
+footer{
+  width: 100%;
+  background-color: #43418A;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* gap: 16px; */
+  align-items: center;
+}
+
+footer .text-muted{
+  color: #fff!important;
+}
+footer .text-muted:hover{
+  color: #DCB55A!important;
+}
+footer .fa-brands:hover{
+  color: #DCB55A!important;
+}
+footer .fa-brands{
+  color: #fff;
+}
+footer .contact-footer{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+gap: 28px;
+}

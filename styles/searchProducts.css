@@ -1,0 +1,235 @@
+.filter-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 7px 16px;
+  gap: 24px;
+  min-width: 300px;
+}
+.collapsible {
+  /* background-color: #777; */
+  /* color: white; */
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+.collapsible label {
+  cursor: pointer;
+}
+/* .active,
+.collapsible:hover {
+  background-color: #555;
+} */
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  /* background-color: #f1f1f1; */
+}
+.product-list-container {
+  padding: 24px 36px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+.sortby div {
+  cursor: pointer;
+  width: 220px;
+}
+.just-products-container {
+  /* White 100 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 28px;
+  background: #ffffff;
+  /* Deep Purple 10 */
+  border-radius: 4px;
+  width: 100%;
+}
+.indiv-product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 16px;
+  gap: 8px;
+  border: 1px solid #ececf3;
+  border-radius: 4px;
+  width: 100%;
+}
+.top-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 32px;
+}
+.buttons-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+}
+
+.indiv-product-card img {
+  height: 200px;
+  width: 200px;
+}
+.indiv-product-about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px;
+  gap: 8px;
+  max-width: 375px;
+}
+.indiv-card-header,
+.indiv-card-desc,
+.indiv-card-multiple-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.indiv-card-multiple-icons {
+  gap: 8px;
+}
+.indiv-card-multiple-icons .features-collection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+.indiv-card-multiple-icons .indiv-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  height: 24px;
+}
+.product-rating-container {
+  display: flex;
+  flex-direction: row;
+  /* align-items: flex-start; */
+  padding: 0px;
+  /* width: max-content; */
+}
+.product-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 14px;
+}
+.product-card-right .indiv-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  height: 24px;
+}
+.pagination-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.pagination-nav li a {
+  color: #43418a;
+}
+.pagination-nav li a:hover {
+  color: #43418a;
+  opacity: 0.8;
+}
+.location-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+}
+.pickup-location-picker {
+  width: 30%;
+  min-width: 226px;
+}
+.pickup-date-picker {
+  width: 20%;
+  min-width: 226px;
+  width: fit-content;
+}
+.month-icon {
+  color: #43418a;
+  position: relative;
+  left: -32px;
+  top: 12px;
+}
+.location-form span,
+.location-form label {
+  color: #fff;
+}
+.location-form .btn-main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4px;
+}
+.vehicle-type-selectors {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.vehicle-type-selectors .indiv-vehicle-type {
+  width: 16%;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
+  /* Deep Purple 100 */
+  border: 2px solid #a1a0c4;
+  /* shadow */
+
+  box-shadow: 0px 16px 40px rgba(173, 176, 191, 0.2);
+  border-radius: 4px;
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* opacity: 0.5; */
+}
+.vehicle-type-selectors .active {
+  border: 2px solid #43418a;
+  box-shadow: 0px 16px 40px rgba(173, 176, 191, 0.2);
+}
+.vehicle-type-selectors .active:active {
+  border: 2px solid #43418a;
+  box-shadow: 0px 16px 40px rgba(173, 176, 191, 0.2);
+}
+
+.indiv-vehicle-type span {
+  font-size: 56px;
+}
+.indiv-vehicle-type span,
+.indiv-vehicle-type label {
+  color: #a1a0c4;
+}
+.active span,
+.active label {
+  color: #43418a;
+}
+
+.indiv-vehicle-type span {
+  font-size: 56px;
+}
+
+/* border: 2px solid #A1A0C4; */
+/* box-shadow: 0px 16px 40px rgba(173, 176, 191, 0.2); */
