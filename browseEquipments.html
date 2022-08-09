@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts (Open Sans and Inter)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- google icons("symbols") -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom css style -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- tab info -->
+    <link rel="icon" href="images/thumb.png">
+    <title>Browse Equipments | SahujiRental</title>
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <div class="navbar-main mb-24">
+      <div class="navbar-top m-auto">
+        <!-- logo -->
+        <a href="home.html" class="d-flex-row align-justify-center">
+          <img class="nav-logo mr-24" src="images/logo.png">
+          <div class="d-flex-row">
+            <label class="nav-logo-text clr-primary m-0 mr-0">Sahuji</label>
+            <label class="nav-logo-text clr-secondary m-0">Rental</label>
+          </div>
+        </a>
+        <!-- search bar -->
+        <div class="m-0 p-0 d-flex-row align-justify-center">
+          <input type="text" class="text-input nav-searchbar mr-0" placeholder="Search products">
+          <button type="button" type="submit" class="btn btn-primary btn-muted">
+            <span class="material-symbols-rounded">
+              search
+            </span>
+          </button>
+        </div>
+        <!-- action buttons -->
+        <div class="m-0 p-0 d-flex-row align-justify-center">
+          <a href="signup.html">
+            <button type="button" class="btn btn-primary btn-sec mr-16">signup</button>
+          </a>
+          <a href="login.html">
+            <button type="button" class="btn btn-primary btn-main">Login</button>
+          </a>
+
+        </div>
+      </div>
+      <div class="navbar-bot sticky-top">
+        <a class="nav-bot-link mr-48" href="browseEquipments.html">Equipment</a>
+        <a class="nav-bot-link mr-48" href="vehicleSearch.html">Vehicles</a>
+        <a class="nav-bot-link" href="browseTools.html">Tools</a>
+      </div>
+    </div>
+    <!----end navbar-- -->
+
+    <!-- main content -->
+    <div class="container-xl rounded-main main-content pb-5">
+      <!-- Search equipment categories-->
+      <!-- breadcrumbs -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="home.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Equipment</li>
+          <!-- <li class="breadcrumb-item " aria-current="page">Library</li> -->
+        </ol>
+      </nav>
+      <!-- categories header -->
+      <div class="d-flex-row align-items-center justify-content-between categories-header mb-16">
+        <label class="txt-headline">Browse Equipments</label>
+        <div class="d-flex-row align-items-center category-select">
+          <label class="txt-subheader mr-8">Direct search</label>
+          <div class="d-flex-row">
+            <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-equipment-category"
+              placeholder="Select category">
+
+              <option selected disabled class="clr-gray">-Select category-</option>
+              <option value="1">Auto Level</option>
+              <option value="2">Excavators & Dragline</option>
+              <option value="3">Backhoe & Loaders</option>
+
+            </select>
+            <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+              expand_more
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- categories grid -->
+      <div class="categories-container">
+        <!-- individual category card 1-->
+        <a href="equipmentSearch.html">
+          <div class="indiv-category">
+            <!-- image -->
+            <div class="bg-black img-container">
+              <img src="images/eq-cat-1.png">
+            </div>
+            <!-- name -->
+            <label class="txt-subheader m-auto">Auto Level</label>
+          </div>
+        </a>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <a href="equipmentSearch.html">
+          <div class="indiv-category">
+            <!-- image -->
+            <div class="bg-black img-container">
+              <img src="images/eq-cat-2.png">
+            </div>
+            <!-- name -->
+            <label class="txt-subheader m-auto">Excavators & Dragline</label>
+          </div>
+        </a>
+
+      </div>
+      <!-- end category grid -->
+      <!-- end category -->
+      <div style="clear: left;"></div>
+      <!-- featured suppliers -->
+      <hr>
+      <label class="txt-headline mb-16">Featured Suppliers</label>
+      <div class="featured-container bg-white rounded-main d-flex-col shadow-main w-100 p-2">
+        <div class="row my-4">
+          <!-- individual supplier -->
+          <a href="equipmentSearch.html"
+            class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="equipmentSearch.html"
+            class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="equipmentSearch.html"
+            class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="equipmentSearch.html"
+            class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="equipmentSearch.html"
+            class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <!-- --featured suppliers -->
+
+
+    </div>
+
+    <!----end home page categories-- -->
+    <!----end main container-- -->
+
+    <footer class="p-5">
+
+      <div class="d-flex-row w-100 justify-content-between align-items-center">
+        <div class="footer-links">
+          <ul class="nav align-item-center justify-content-center">
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">About Us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Contact us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="contact-footer">
+          <div class="d-flex-row gap-3">
+            <a href="#"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+          </div>
+          <div class="d-flex-row gap-3">
+            <a href="#">
+              <img src="images/App Store.png">
+            </a>
+            <a href="#">
+              <img src="images/Google Play.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-muted">© 2022 SahujiRental</p>
+    </footer>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/919c05e0a8.js" crossorigin="anonymous"></script>
+    <!-- custom scripts -->
+    <script src="js/passwordVisibility.js"></script>
+
+  </body>
+
+</html>

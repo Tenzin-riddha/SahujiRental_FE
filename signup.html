@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts (Open Sans and Inter)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- google icons("symbols") -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom css style -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- tab info -->
+    <link rel="icon" href="images/thumb.png">
+    <title>Signup | SahujiRental</title>
+  </head>
+
+  <body>
+
+    <!-- secondary navbar for login/signup -->
+    <div class="navbar-sec mb-24">
+      <div class="navbar-bot sticky-top">
+        <!-- logo -->
+        <a href="home.html" class="d-flex-row align-justify-center">
+          <img class="nav-logo mr-24" src="images/logo-inverse.png">
+          <div class="d-flex-row">
+            <label class="nav-logo-text clr-white m-0 mr-0">Sahuji</label>
+            <label class="nav-logo-text clr-secondary m-0">Rental</label>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!----end secondary nav-- -->
+
+    <!-- main content -->
+    <div class="container-xl rounded-main main-content pb-5">
+
+      <div class="w-100 mt-5">
+        <a href="home.html">
+          <button type="button" class="btn btn-for-back">
+            <span class="material-symbols-rounded back-symbol">
+              arrow_back_ios
+            </span>
+            <span>go back to homepage</span>
+          </button>
+        </a>
+
+      </div>
+      <!----end go back home-- -->
+      <!-- signup container -->
+      <div class="login-container signup-container row w-100 shadow-main bg-white m-auto p-0 rounded overflow-hidden">
+        <!-- right side - form -->
+        <div
+          class="col-xxl-7 col-xl-7 col-lg-7 col-md-9 col-sm-9 col-xs-12 login-form-container signup-form-container h-100 overflow-visible">
+          <!-- header -->
+          <div class="login-header mb-0">
+            <label class="txt-headline">Create new account</label>
+            <label class="txt-caption clr-blk50">Enter your information</label>
+          </div>
+          <!-- form frame -->
+          <div class="form input-form-container signup-form-container  mt-0">
+            <!-- tabs header -->
+            <ul class="nav nav-pills d-flex-row justify-content-between mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item mr-2 clr-primary" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Personal Information</button>
+              </li>
+              <li class="nav-item mr-2" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Identity
+                  Documents</button>
+              </li>
+              <li class="nav-item mr-2" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Profile</button>
+              </li>
+            </ul>
+            <!-- end tabs header-- -->
+            <!-- frame tab content -->
+            <div class="tab-content mb-0" id="pills-tabContent">
+              <!-- tab 1 information -->
+              <div class="tab-pane show mt-0 active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <!-- name -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Full name</label>
+                    <!-- <label class="txt-subheader txt-error">Name should be atleast 4 characters</label> -->
+                  </div>
+                  <input type="text" class="text-input form-text-input mr-0" id="input-name-field"
+                    placeholder="Enter your full name">
+                </div>
+                <!-- email -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Email</label>
+                    <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                  </div>
+                  <input type="email" class="text-input form-text-input mr-0" id="input-email-field"
+                    placeholder="Enter your email">
+                </div>
+                <!-- address and phone-->
+                <div class="d-flex-row justify-content-between mb-28">
+                  <!-- address -->
+                  <div class="address-form">
+                    <div class="d-flex-row justify-content-xl-between">
+                      <label class="txt-subheader" for="input-name-field">Address</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+                    </div>
+                    <input type="text" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your address">
+                  </div>
+                  <!-- phone -->
+                  <div class="email-form">
+                    <div class="d-flex-row justify-content-between">
+                      <label class="txt-subheader" for="input-name-field">Phone number</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+                    </div>
+                    <input type="number" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your address">
+                  </div>
+                </div>
+                <!-- progress bar -->
+                <div class="progress mt-0 mb-16">
+                  <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <!-- end-progress -->
+                <!-- action buttons -->
+                <div class="d-flex-row signup-action-section mb-28 w-100">
+                  <!-- <button class="btn btn-primary btn-sec btn-login-continue m-auto btnPrevious disabled">Prev</button> -->
+                  <button class="btn btn-primary btn-main btn-login-continue m-auto btnNext">Next</button>
+                </div>
+                <!-- end-action buttons -->
+              </div>
+
+              <!-- tab 2 documents -->
+              <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- document type and number-->
+                <div class="d-flex-row justify-content-between mb-28">
+                  <!-- type -->
+                  <div class="address-form">
+                    <div class="d-flex-row justify-content-xl-between">
+                      <label class="txt-subheader" for="input-name-field">Document type</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+                    </div>
+                    <div class="d-flex-row">
+                      <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-email-field"
+                        placeholder="Enter your address">
+
+                        <option selected disabled class="clr-gray">-Select document type-</option>
+                        <option value="1">Citizenship</option>
+                        <option value="2">Passport</option>
+                        <option value="3">Driving License</option>
+
+                      </select>
+                      <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                        expand_more
+                      </span>
+                    </div>
+
+                  </div>
+                  <!-- number -->
+                  <div class="email-form">
+                    <div class="d-flex-row justify-content-between">
+                      <label class="txt-subheader" for="input-name-field">Document number</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+
+                    </div>
+                    <input type="number" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your address">
+                  </div>
+                </div>
+                <!-- f document -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Upload front side of document</label>
+                    <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                  </div>
+                  <div class="d-flex-row">
+                    <input type="file" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your email"><span
+                      class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                      upload_file
+                    </span>
+                  </div>
+
+                </div>
+                <!-- b document -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Upload back side of document</label>
+                    <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                  </div>
+                  <div class="d-flex-row">
+                    <input type="file" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your email"><span
+                      class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                      upload_file
+                    </span>
+                  </div>
+
+                </div>
+                <!-- progress bar -->
+                <div class="progress mt-0 mb-16">
+                  <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <!-- end-progress -->
+                <!-- action buttons -->
+                <div class="d-flex-row signup-action-section mb-28 w-100">
+                  <button class="btn btn-primary btn-sec btn-login-continue m-auto btnPrevious">Prev</button>
+                  <button class="btn btn-primary btn-main btn-login-continue m-auto btnNext">Next</button>
+                </div>
+                <!-- end-action buttons -->
+              </div>
+              <!-- tab 3 profile -->
+              <div class="tab-pane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <!-- image and password -->
+                <div class="d-flex-row gap-2">
+                  <!-- image -->
+                  <div class="">
+                    <div class="email-form mb-28">
+                      <div class="d-flex-row justify-content-between mb-2">
+                        <label class="txt-subheader" for="input-name-field">Upload picture</label>
+                        <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                      </div>
+                      <div class="d-flex-row">
+                        <input type="file" class="text-input form-text-input mr-0" id="input-email-field"
+                          placeholder="Enter your email"><span
+                          class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                          upload_file
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- passwords -->
+                  <div>
+                    <div class="password-form mb-28">
+                      <div class="d-flex-row justify-content-between mb-2">
+                        <label class="txt-subheader" for="input-password-field">Password</label>
+                        <!-- <label class="txt-subheader txt-error">Incorrect password</label> -->
+                      </div>
+
+                      <div class="d-flex-row align-content-center">
+                        <input type="password" minlength="8" class="text-input form-text-input mr-0"
+                          id="input-password-field" placeholder="Password">
+                        <span id="togglePassword-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-visible d-none">
+                          visibility
+                        </span>
+                        <span id="togglePassword-non-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-non-visible d-block">
+                          visibility_off
+                        </span>
+                      </div>
+                    </div>
+                    <!-- re password -->
+                    <div class="password-form mb-28">
+                      <div class="d-flex-row justify-content-between mb-2">
+                        <label class="txt-subheader" for="input-repassword-field">Re-Password</label>
+                        <!-- <label class="txt-subheader txt-error">Incorrect password</label> -->
+                      </div>
+
+                      <div class="d-flex-row align-content-center">
+                        <input type="password" minlength="8" class="text-input form-text-input mr-0"
+                          id="input-repassword-field" placeholder="Re-password">
+                        <span id="togglerePassword-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-visible d-none">
+                          visibility
+                        </span>
+                        <span id="togglerePassword-non-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-non-visible d-block">
+                          visibility_off
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check form-checkbox-input mb-28">
+                  <input class="form-check-input" type="checkbox" value="" id="checkReadStuff">
+                  <label class="form-check-label txt-body2" for="checkReadStuff">
+                    I have read and accept the <b>Terms and Conditions </b> and <b>Privacy Policy</b>
+                  </label>
+                </div>
+                <!-- progress bar -->
+                <div class="progress mt-0 mb-16">
+                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <!-- end-progress -->
+                <!-- action buttons -->
+                <div class="d-flex-row signup-action-section mb-28 w-100">
+                  <button class="btn btn-primary btn-sec btn-login-continue m-auto btnPrevious">Prev</button>
+                  <button class="btn btn-primary btn-main btn-login-continue m-auto btnNext">Complete</button>
+                </div>
+                <!-- end-action buttons -->
+              </div>
+            </div>
+            <!-- input forms -->
+
+
+
+
+
+            <!-- signup link -->
+            <div class="login-signup-navigator text-center">
+              <a href="login.html"><label class="txt-subheading clr-primary">Already have an account?<b
+                    class="clr-primary">
+                    Login here</b></label></a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- left side - image -->
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-7 col-xs-12 login-image-container"
+          style="background-color: #333333;">
+          <img class="w-100" src="images/signup-image.png">
+        </div>
+
+      </div>
+      <!-- end signup container-- -->
+    </div>
+
+
+
+    <!----end login container-- -->
+    <!-- new login -->
+
+    <!-- end new login-- -->
+    <!----end main container-- -->
+
+    <footer class="p-5">
+
+      <div class="d-flex-row w-100 justify-content-between align-items-center">
+        <div class="footer-links">
+          <ul class="nav align-item-center justify-content-center">
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">About Us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Contact us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="contact-footer">
+          <div class="d-flex-row gap-3">
+            <a href="#"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+          </div>
+          <div class="d-flex-row gap-3">
+            <a href="#">
+              <img src="images/App Store.png">
+            </a>
+            <a href="#">
+              <img src="images/Google Play.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-muted">© 2022 SahujiRental</p>
+    </footer>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/919c05e0a8.js" crossorigin="anonymous"></script>
+    <!-- custom scripts -->
+    <script src="js/passwordVisibility.js"></script>
+    <script src="js/next-back-tabs.js"></script>
+
+  </body>
+
+</html>

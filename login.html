@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts (Open Sans and Inter)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- google icons("symbols") -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom css style -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- tab info -->
+    <link rel="icon" href="images/thumb.png">
+    <title>Login | SahujiRental</title>
+  </head>
+
+  <body>
+
+    <!-- secondary navbar for login/signup -->
+    <div class="navbar-sec mb-24">
+      <div class="navbar-bot sticky-top">
+        <!-- logo -->
+        <a href="home.html" class="d-flex-row align-justify-center">
+          <img class="nav-logo mr-24" src="images/logo-inverse.png">
+          <div class="d-flex-row">
+            <label class="nav-logo-text clr-white m-0 mr-0">Sahuji</label>
+            <label class="nav-logo-text clr-secondary m-0">Rental</label>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!----end secondary nav-- -->
+
+    <!-- main content -->
+    <div class="container-xl rounded-main main-content pb-5">
+
+      <div class="w-100 mt-5">
+        <a href="home.html">
+          <button type="button" class="btn btn-for-back">
+            <span class="material-symbols-rounded back-symbol">
+              arrow_back_ios
+            </span>
+            <span>go back to homepage</span>
+          </button>
+        </a>
+
+      </div>
+      <!----end go back home-- -->
+      <!-- login container -->
+      <div class="login-container row w-100 shadow-main bg-white m-auto p-0 rounded overflow-hidden">
+        <!-- right side - image -->
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 login-image-container overflow-hidden">
+          <img class="w-100" src="images/login-image.png">
+        </div>
+        <!-- left side - form -->
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 login-form-container h-100">
+          <!-- header -->
+          <div class="login-header">
+            <label class="txt-headline">Login to your account</label>
+            <label class="txt-caption clr-blk50">Enter your credentials</label>
+          </div>
+          <!-- input forms -->
+          <div class="form input-form-container">
+            <!-- email -->
+            <div class="email-form mb-28">
+              <div class="d-flex-row justify-content-between mb-2">
+                <label class="txt-subheader" for="input-email-field">Email</label>
+                <label class="txt-subheader txt-error">Email does not exist</label>
+              </div>
+              <input type="email" class="text-input form-text-input mr-0" id="input-email-field"
+                placeholder="Enter your email">
+            </div>
+            <!-- password -->
+            <div class="password-form mb-28">
+              <div class="d-flex-row justify-content-between mb-2">
+                <label class="txt-subheader" for="input-password-field">Password</label>
+                <label class="txt-subheader txt-error">Incorrect password</label>
+              </div>
+
+              <div class="d-flex-row align-content-center">
+                <input type="password" minlength="8" class="text-input form-text-input mr-0" id="input-password-field"
+                  placeholder="Enter your password">
+                <span id="togglePassword-visible"
+                  class="material-symbols-rounded d-flex-row align-content-center password-visible d-none">
+                  visibility
+                </span>
+                <span id="togglePassword-non-visible"
+                  class="material-symbols-rounded d-flex-row align-content-center password-non-visible d-block">
+                  visibility_off
+                </span>
+              </div>
+
+            </div>
+            <!-- auxiliary -->
+            <div class="aux-action d-flex-row justify-content-between mb-28">
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Remember me
+                </label>
+              </div>
+              <a href="#" class="txt-aux">
+                Forgot password?
+              </a>
+            </div>
+            <!-- continue button -->
+            <div class="d-flex-row mb-28 w-100">
+              <button class="btn btn-primary btn-main btn-login-continue m-auto">Continue</button>
+            </div>
+            <!-- divider -->
+            <div class="d-flex-row divider w-100 mb-28">
+              <div class="divider-line"></div>
+              <label class="mx-2 txt-subheader">or, login with</label>
+              <div class="divider-line"></div>
+            </div>
+
+            <!-- social media -->
+            <div class="alternate-login w-100 mb-28">
+              <a href="#" class="logo-btn">
+                <button type="submit" class="btn btn-facebook px-3">
+                  <i class="fa-brands fa-2xl fa-facebook"></i>
+                  <label>Facebook</label>
+                </button>
+              </a>
+              <a href="#" class="logo-btn mr-0">
+                <button type="submit" class="btn btn-googleplus">
+                  <i class="fa-brands fa-2xl fa-google-plus"></i>
+                  <label>Google+</label></button>
+              </a>
+            </div>
+            <!-- signup link -->
+            <div class="login-signup-navigator text-center">
+              <a href="signup.html"><label class="txt-subheading clr-primary">Not registered yet? <b
+                    class="clr-primary">Create a
+                    new account here</b></label></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!----end login container-- -->
+    <!-- new login -->
+
+    <!-- end new login-- -->
+    <!----end main container-- -->
+
+    <footer class="p-5">
+
+      <div class="d-flex-row w-100 justify-content-between align-items-center">
+        <div class="footer-links">
+          <ul class="nav align-item-center justify-content-center">
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">About Us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Contact us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="contact-footer">
+          <div class="d-flex-row gap-3">
+            <a href="#"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+          </div>
+          <div class="d-flex-row gap-3">
+            <a href="#">
+              <img src="images/App Store.png">
+            </a>
+            <a href="#">
+              <img src="images/Google Play.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-muted">© 2022 SahujiRental</p>
+    </footer>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/919c05e0a8.js" crossorigin="anonymous"></script>
+    <!-- custom scripts -->
+    <script src="js/passwordVisibility.js"></script>
+
+  </body>
+
+</html>

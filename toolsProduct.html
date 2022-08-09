@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts (Open Sans and Inter)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- google icons("symbols") -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom css style -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- tab info -->
+    <link rel="icon" href="images/thumb.png">
+    <title>Drilling Machine | SahujiRental</title>
+
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <div class="navbar-main mb-24">
+      <div class="navbar-top m-auto">
+        <!-- logo -->
+        <a href="home.html" class="d-flex-row align-justify-center">
+          <img class="nav-logo mr-24" src="images/logo.png">
+          <div class="d-flex-row">
+            <label class="nav-logo-text clr-primary m-0 mr-0">Sahuji</label>
+            <label class="nav-logo-text clr-secondary m-0">Rental</label>
+          </div>
+        </a>
+        <!-- search bar -->
+        <div class="m-0 p-0 d-flex-row align-justify-center">
+          <input type="text" class="text-input nav-searchbar mr-0" placeholder="Search products">
+          <button type="button" type="submit" class="btn btn-primary btn-muted">
+            <span class="material-symbols-rounded">
+              search
+            </span>
+          </button>
+        </div>
+        <!-- action buttons -->
+        <div class="m-0 p-0 d-flex-row align-justify-center">
+          <a href="signup.html">
+            <button type="button" class="btn btn-primary btn-sec mr-16">signup</button>
+          </a>
+          <a href="login.html">
+            <button type="button" class="btn btn-primary btn-main">Login</button>
+          </a>
+
+        </div>
+      </div>
+      <div class="navbar-bot sticky-top">
+        <a class="nav-bot-link mr-48" href="browseEquipments.html">Equipment</a>
+        <a class="nav-bot-link mr-48" href="vehicleSearch.html">Vehicles</a>
+        <a class="nav-bot-link" href="browseTools.html">Tools</a>
+      </div>
+    </div>
+    <!----end navbar-- -->
+
+
+    <!-- main content -->
+    <div class="container-xl rounded-main main-content pb-5">
+      <!-- breadcrumbs -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item " aria-current="page"><a href="home.html">Home</a></li>
+          <li class="breadcrumb-item " aria-current="page"><a href="browseTools.html">Tools</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Caterpillar</li>
+          <!-- <li class="breadcrumb-item " aria-current="page">Library</li> -->
+        </ol>
+      </nav>
+      <!----end breadcrumbs-- -->
+      <!-- go back home button -->
+      <div class="w-100">
+        <a href="home.html">
+          <button type="button" class="btn btn-for-back">
+            <span class="material-symbols-rounded back-symbol">
+              arrow_back_ios
+            </span>
+            <span>go back to homepage</span>
+          </button>
+        </a>
+      </div>
+      <!----end go back home-- -->
+      <!-- product page -->
+      <div class="w-100 bg-white product-page-container rounded-main shadow-main">
+        <!-- top-content -->
+        <div class="product-main-content w-100">
+          <!-- images -->
+          <div class="product-details-left">
+            <div class="main-image w-100">
+              <img src="images/tools1.png">
+            </div>
+            <div class="other-images">
+              <img src="images/eq-cat-1.png">
+              <img src="images/eq-cat-1.png">
+              <img src="images/eq-cat-1.png">
+              <img src="images/eq-cat-1.png">
+            </div>
+          </div>
+          <!-- main details -->
+          <div class="product-details-right">
+            <!-- title, model, brand and rating, supplier -->
+            <div class="product-page-header w-100">
+              <!-- title, model and brand -->
+              <div class="product-page-header-text d-flex-col gap-8">
+                <label class="txt-title">Drilling Machine | Mild Steel</label>
+                <div class="d-flex-row gap-16">
+                  <label class="txt-body clr-blk50"> Brand: MILD STeel</label>
+                  <label class="txt-body clr-blk50"> Model: G7945 </label>
+                </div>
+              </div>
+
+              <!-- rating and supplier -->
+              <div class="product-page-header-topright d-flex-col gap-1">
+                <div class="product-rating-container">
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-blk50 ">
+                    star
+                  </span>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    store
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                </div>
+              </div>
+            </div>
+            <!-- desc -->
+            <div class="product-page-desc d-flex-col gap-0">
+              <label class="txt-body2">Description</label>
+              <p class="txt-body clr-blk50">Cat® Hydraulic Shovel technology delivers increased digging forces and
+                greater productivity. </p>
+            </div>
+
+            <!-- product features -->
+            <div class="product-page-multiple-icons">
+              <label class="txt-body2">Features</label>
+              <div class="features-collection">
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    local_gas_station
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Electric</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    bolt
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">200V</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- specifications -->
+            <div class="product-page-specifications">
+              <label class="txt-body2">Specifications</label>
+              <!-- list items -->
+              <ul>
+                <li>
+                  <label class="txt-body2">Product Type:</label>
+                  <label class="txt-body">Compact Wheel Loaders</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Brand::</label>
+                  <label class="txt-body">Caterpillar (CAT)</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Model:</label>
+                  <label class="txt-body">323D3</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Engine Capacity/Power:</label>
+                  <label class="txt-body">2500</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Lot No:</label>
+                  <label class="txt-body">25</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Color:</label>
+                  <label class="txt-body">Yellow</label>
+                </li>
+                <li>
+                  <label class="txt-body2">MakeYear:</label>
+                  <label class="txt-body">2020</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Transmission:</label>
+                  <label class="txt-body">Manual - 4WD</label>
+                </li>
+              </ul>
+            </div>
+            <!-- price -->
+            <label class="txt-title">Approximate base price: 3500/day</label>
+            <!-- book rent button -->
+            <a href="bookingDone.html">
+              <button type="button" class="btn btn-primary btn-main fit-content btn-product-rent">Proceed to
+                rent</button>
+            </a>
+
+            <!-- suppliers info -->
+            <!-- product features -->
+            <div class="product-page-multiple-icons">
+              <label class="txt-body2">Supplier's Info</label>
+              <div class="features-collection">
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    store
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    location_on
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Anamnagar</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    call
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">9810987654</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    mail
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">rabiisuppliers@mail.com</label>
+                </div>
+              </div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- bottom content -->
+        <div class="product-more-details">
+          <!-- nav for tabs -->
+          <ul class="nav nav-tabs mb-28" id="productOtherDetails" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#extended-service-cost"
+                type="button" role="tab" aria-controls="home" aria-selected="true">Extended service cost</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#product-features"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">Product features</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#additional-info"
+                type="button" role="tab" aria-controls="contact" aria-selected="false">Additional info</button>
+            </li>
+          </ul>
+          <!-- tab contents -->
+          <div class="tab-content" id="myTabContent">
+            <!-- extended costs -->
+            <div class="tab-pane fade show active" id="extended-service-cost" role="tabpanel"
+              aria-labelledby="home-tab">extended service costs details</div>
+            <div class="tab-pane fade" id="product-features" role="tabpanel" aria-labelledby="profile-tab">product
+              features info</div>
+            <div class="tab-pane fade" id="additional-info" role="tabpanel" aria-labelledby="contact-tab">additional
+              info details</div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!----end main container-- -->
+    </div>
+
+
+
+
+    <footer class="p-5">
+
+      <div class="d-flex-row w-100 justify-content-between align-items-center">
+        <div class="footer-links">
+          <ul class="nav align-item-center justify-content-center">
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">About Us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Contact us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="contact-footer">
+          <div class="d-flex-row gap-3">
+            <a href="#"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+          </div>
+          <div class="d-flex-row gap-3">
+            <a href="#">
+              <img src="images/App Store.png">
+            </a>
+            <a href="#">
+              <img src="images/Google Play.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-muted">© 2022 SahujiRental</p>
+    </footer>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/919c05e0a8.js" crossorigin="anonymous"></script>
+    <!-- custom scripts -->
+    <script src="js/passwordVisibility.js"></script>
+    <script src="js/collapse.js"></script>
+    <!-- for date range picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="js/date-range-picker.js"></script>
+
+  </body>
+
+</html>

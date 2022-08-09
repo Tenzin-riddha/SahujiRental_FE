@@ -1,0 +1,1640 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- google fonts (Open Sans and Inter)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- google icons("symbols") -->
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- custom css style -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- tab info -->
+    <link rel="icon" href="images/thumb.png">
+    <title>Library SahujiRental</title>
+
+  </head>
+
+  <body>
+
+    <!-- navbar -->
+    <h2 class="component-caption">navbar</h2>
+    <div class="navbar-main mb-24">
+      <div class="navbar-top m-auto">
+        <!-- logo -->
+        <a href="home.html" class="d-flex-row align-justify-center">
+          <img class="nav-logo mr-24" src="images/logo.png">
+          <div class="d-flex-row">
+            <label class="nav-logo-text clr-primary m-0 mr-0">Sahuji</label>
+            <label class="nav-logo-text clr-secondary m-0">Rental</label>
+          </div>
+        </a>
+        <!-- search bar -->
+        <!-- <div class="m-0 p-0 d-flex-row align-justify-center">
+          <input type="text" class="text-input nav-searchbar mr-0" placeholder="Search products">
+          <button type="button" type="submit" class="btn btn-primary btn-muted">
+            <span class="material-symbols-rounded">
+              search
+            </span>
+          </button>
+        </div> -->
+        <!-- action buttons -->
+        <div class="m-0 p-0 d-flex-row align-justify-center">
+          <a href="signup.html">
+            <button type="button" class="btn btn-primary btn-sec mr-16">signup</button>
+          </a>
+          <a href="login.html">
+            <button type="button" class="btn btn-primary btn-main">Login</button>
+          </a>
+
+        </div>
+      </div>
+      <div class="navbar-bot sticky-top">
+        <a class="nav-bot-link mr-48" href="browseEquipments.html">Equipment</a>
+        <a class="nav-bot-link mr-48" href="vehicleSearch.html">Vehicles</a>
+        <a class="nav-bot-link" href="browseTools.html">Tools</a>
+      </div>
+    </div>
+    <!----end navbar-- -->
+
+    <!-- secondary navbar for login/signup -->
+    <h2 class="component-caption"> nav for login/signup</h2>
+    <div class="navbar-sec mb-24">
+      <div class="navbar-bot sticky-top">
+        <!-- logo -->
+        <a href="home.html" class="d-flex-row align-justify-center">
+          <img class="nav-logo mr-24" src="images/logo-inverse.png">
+          <div class="d-flex-row">
+            <label class="nav-logo-text clr-white m-0 mr-0">Sahuji</label>
+            <label class="nav-logo-text clr-secondary m-0">Rental</label>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!----end secondary nav-- -->
+
+    <!-- main content -->
+    <h2 class="component-caption">main container</h2>
+    <div class="container-xl rounded-main main-content pb-5">
+      <!-- breadcrumbs -->
+      <h2 class="component-caption">breadcrumb</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active" aria-current="page">Home</li>
+          <!-- <li class="breadcrumb-item " aria-current="page">Library</li> -->
+        </ol>
+      </nav>
+      <!----end breadcrumbs-- -->
+      <!-- title -->
+      <h2 class="component-caption">headline</h2>
+      <p class="txt-headline mb-24">Explore our categories</p>
+      <!-- -- -->
+      <!-- home page categories -->
+      <h2 class="component-caption">main categories</h2>
+      <div class="row">
+        <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-5 col-xs-12 p-0 rounded border-0">
+          <img src="images/equipment1.png" class="card-img-top" alt="...">
+          <div class="card-body rounded-main d-flex-col">
+            <p class="card-text txt-headline text-center mb-16">Equipment</p>
+            <p class="card-text txt-body text-center mb-20">
+              The tools that are utilized during the construction of the structures are known as construction tools.
+              These tools help to make work easy and fast.
+            </p>
+            <a href="equipment.html" class="mx-auto">
+              <button class="btn btn-primary btn-main mx-auto">Explore</button>
+            </a>
+          </div>
+        </div>
+        <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-5 col-xs-12 p-0 rounded-main border-0">
+          <img src="images/vehicles1.png" class="card-img-top" alt="...">
+          <div class="card-body rounded-main d-flex-col">
+            <p class="card-text txt-headline text-center mb-16">Vehicles</p>
+            <p class="card-text txt-body text-center mb-20">
+              The tools that are utilized during the construction of the structures are known as construction tools.
+              These tools help to make work easy and fast.
+            </p>
+            <a href="vehicles.html" class="m-auto">
+              <button class="btn btn-primary btn-main m-auto">Explore</button>
+            </a>
+          </div>
+        </div>
+        <div class="card col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-5 col-xs-12 p-0 rounded-main border-0">
+          <img src="images/tools1.png" class="card-img-top" alt="...">
+          <div class="card-body rounded-main d-flex-col">
+            <p class="card-text txt-headline text-center mb-16">Tools</p>
+            <p class="card-text txt-body text-center mb-20">
+              The tools that are utilized during the construction of the structures are known as construction tools.
+              These tools help to make work easy and fast.
+            </p>
+            <a href="tools.html" class="m-auto">
+              <button type="submit" class="btn btn-primary btn-main m-auto">Explore</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!----end home page categories-- -->
+
+      <!-- go back home button -->
+      <h2 class="component-caption">go back link</h2>
+      <div class="w-100 mt-5">
+        <button type="button" class="btn btn-for-back">
+          <span class="material-symbols-rounded back-symbol">
+            arrow_back_ios
+          </span>
+          <span>go back to homepage</span>
+        </button>
+      </div>
+      <!----end go back home-- -->
+      <!-- login container -->
+      <h2 class="component-caption">login container</h2>
+      <div class="login-container row w-100 shadow-main bg-white m-auto p-0 rounded overflow-hidden">
+        <!-- right side - image -->
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 login-image-container overflow-hidden">
+          <img class="w-100" src="images/login-image.png">
+        </div>
+        <!-- left side - form -->
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-xs-12 login-form-container h-100">
+          <!-- header -->
+          <div class="login-header">
+            <label class="txt-headline">Login to your account</label>
+            <label class="txt-caption clr-blk50">Enter your credentials</label>
+          </div>
+          <!-- input forms -->
+          <div class="form input-form-container">
+            <!-- email -->
+            <div class="email-form mb-28">
+              <div class="d-flex-row justify-content-between mb-2">
+                <label class="txt-subheader" for="input-email-field">Email</label>
+                <label class="txt-subheader txt-error">Email does not exist</label>
+              </div>
+              <input type="email" class="text-input form-text-input mr-0" id="input-email-field"
+                placeholder="Enter your email">
+            </div>
+            <!-- password -->
+            <div class="password-form mb-28">
+              <div class="d-flex-row justify-content-between mb-2">
+                <label class="txt-subheader" for="input-password-field">Password</label>
+                <label class="txt-subheader txt-error">Incorrect password</label>
+              </div>
+
+              <div class="d-flex-row align-content-center">
+                <input type="password" minlength="8" class="text-input form-text-input mr-0" id="input-password-field"
+                  placeholder="Enter your password">
+                <span id="togglePassword-visible"
+                  class="material-symbols-rounded d-flex-row align-content-center password-visible d-none">
+                  visibility
+                </span>
+                <span id="togglePassword-non-visible"
+                  class="material-symbols-rounded d-flex-row align-content-center password-non-visible d-block">
+                  visibility_off
+                </span>
+              </div>
+
+            </div>
+            <!-- auxiliary -->
+            <div class="aux-action d-flex-row justify-content-between mb-28">
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Remember me
+                </label>
+              </div>
+              <a href="#" class="txt-aux">
+                Forgot password?
+              </a>
+            </div>
+            <!-- continue button -->
+            <div class="d-flex-row mb-28 w-100">
+              <button class="btn btn-primary btn-main btn-login-continue m-auto">Continue</button>
+            </div>
+            <!-- divider -->
+            <div class="d-flex-row divider w-100 mb-28">
+              <div class="divider-line"></div>
+              <label class="mx-2 txt-subheader">or, login with</label>
+              <div class="divider-line"></div>
+            </div>
+
+            <!-- social media -->
+            <div class="alternate-login w-100 mb-28">
+              <a href="#" class="logo-btn">
+                <button type="submit" class="btn btn-facebook px-3">
+                  <i class="fa-brands fa-2xl fa-facebook"></i>
+                  <label>Facebook</label>
+                </button>
+              </a>
+              <a href="#" class="logo-btn mr-0">
+                <button type="submit" class="btn btn-googleplus">
+                  <i class="fa-brands fa-2xl fa-google-plus"></i>
+                  <label>Google+</label></button>
+              </a>
+            </div>
+            <!-- signup link -->
+            <div class="login-signup-navigator text-center">
+              <a href="signup.html"><label class="txt-subheading clr-primary">Not registered yet? <b
+                    class="clr-primary">Create a
+                    new account here</b></label></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- end login container-- -->
+
+      <!-- signup container -->
+      <h2 class="component-caption">signup container</h2>
+      <div class="login-container signup-container row w-100 shadow-main bg-white m-auto p-0 rounded overflow-hidden">
+        <!-- right side - form -->
+        <div
+          class="col-xxl-7 col-xl-7 col-lg-7 col-md-9 col-sm-9 col-xs-12 login-form-container signup-form-container h-100 overflow-visible">
+          <!-- header -->
+          <div class="login-header mb-0">
+            <label class="txt-headline">Create new account</label>
+            <label class="txt-caption clr-blk50">Enter your information</label>
+          </div>
+          <!-- form frame -->
+          <div class="form input-form-container signup-form-container  mt-0">
+            <!-- tabs header -->
+            <ul class="nav nav-pills d-flex-row justify-content-between mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item mr-2 clr-primary" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">Personal Information</button>
+              </li>
+              <li class="nav-item mr-2" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Identity
+                  Documents</button>
+              </li>
+              <li class="nav-item mr-2" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Profile</button>
+              </li>
+            </ul>
+            <!-- end tabs header-- -->
+            <!-- frame tab content -->
+            <div class="tab-content mb-0" id="pills-tabContent">
+              <!-- tab 1 information -->
+              <div class="tab-pane show mt-0 active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <!-- name -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Full name</label>
+                    <!-- <label class="txt-subheader txt-error">Name should be atleast 4 characters</label> -->
+                  </div>
+                  <input type="text" class="text-input form-text-input mr-0" id="input-name-field"
+                    placeholder="Enter your full name">
+                </div>
+                <!-- email -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Email</label>
+                    <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                  </div>
+                  <input type="email" class="text-input form-text-input mr-0" id="input-email-field"
+                    placeholder="Enter your email">
+                </div>
+                <!-- address and phone-->
+                <div class="d-flex-row justify-content-between mb-28">
+                  <!-- address -->
+                  <div class="address-form">
+                    <div class="d-flex-row justify-content-xl-between">
+                      <label class="txt-subheader" for="input-name-field">Address</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+                    </div>
+                    <input type="text" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your address">
+                  </div>
+                  <!-- phone -->
+                  <div class="email-form">
+                    <div class="d-flex-row justify-content-between">
+                      <label class="txt-subheader" for="input-name-field">Phone number</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+                    </div>
+                    <input type="number" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your address">
+                  </div>
+                </div>
+                <!-- progress bar -->
+                <div class="progress mt-0 mb-16">
+                  <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <!-- end-progress -->
+              </div>
+
+              <!-- tab 2 documents -->
+              <div class="tab-pane" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- document type and number-->
+                <div class="d-flex-row justify-content-between mb-28 gap-16">
+                  <!-- type -->
+                  <div class="address-form">
+                    <div class="d-flex-row justify-content-xl-between">
+                      <label class="txt-subheader" for="input-name-field">Document type</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+                    </div>
+                    <div class="d-flex-row">
+                      <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-email-field"
+                        placeholder="Enter your address">
+
+                        <option selected disabled class="clr-gray">-Select document type-</option>
+                        <option value="1">Citizenship</option>
+                        <option value="2">Passport</option>
+                        <option value="3">Driving License</option>
+
+                      </select>
+                      <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                        expand_more
+                      </span>
+                    </div>
+
+                  </div>
+                  <!-- number -->
+                  <div class="email-form">
+                    <div class="d-flex-row justify-content-between">
+                      <label class="txt-subheader" for="input-name-field">Document number</label>
+                      <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+
+                    </div>
+                    <input type="number" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your address">
+                  </div>
+                </div>
+                <!-- f document -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Upload front side of document</label>
+                    <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                  </div>
+                  <div class="d-flex-row">
+                    <input type="file" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your email"><span
+                      class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                      upload_file
+                    </span>
+                  </div>
+
+                </div>
+                <!-- b document -->
+                <div class="email-form mb-28">
+                  <div class="d-flex-row justify-content-between mb-2">
+                    <label class="txt-subheader" for="input-name-field">Upload back side of document</label>
+                    <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                  </div>
+                  <div class="d-flex-row">
+                    <input type="file" class="text-input form-text-input mr-0" id="input-email-field"
+                      placeholder="Enter your email"><span
+                      class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                      upload_file
+                    </span>
+                  </div>
+
+                </div>
+                <!-- progress bar -->
+                <div class="progress mt-0 mb-16">
+                  <div class="progress-bar" role="progressbar" style="width: 66%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <!-- end-progress -->
+              </div>
+              <!-- tab 3 profile -->
+              <div class="tab-pane" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <!-- image and password -->
+                <div class="d-flex-row gap-16">
+                  <!-- image -->
+                  <div class="w-50 image-upload-container">
+                    <!-- -->
+                    <div class="image-form mb-28">
+                      <div class="d-flex-row justify-content-between mb-2">
+                        <label class="txt-subheader" for="input-profile-image-field">Upload image</label>
+                        <!-- <label class="txt-subheader txt-error">Emter your full email</label> -->
+                      </div>
+                      <div class="d-flex-row profile-upload-container">
+                        <input type="file" class="text-input form-text-input mr-0" id="input-profile-image-field"
+                          placeholder="profile image"><span
+                          class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                          upload_file
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- passwords -->
+                  <div>
+                    <div class="password-form mb-28">
+                      <div class="d-flex-row justify-content-between mb-2">
+                        <label class="txt-subheader" for="input-password-field">Password</label>
+                        <!-- <label class="txt-subheader txt-error">Incorrect password</label> -->
+                      </div>
+
+                      <div class="d-flex-row align-content-center">
+                        <input type="password" minlength="8" class="text-input form-text-input mr-0"
+                          id="input-password-field" placeholder="Enter your password">
+                        <span id="togglePassword-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-visible d-none">
+                          visibility
+                        </span>
+                        <span id="togglePassword-non-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-non-visible d-block">
+                          visibility_off
+                        </span>
+                      </div>
+                    </div>
+                    <!-- re password -->
+                    <div class="password-form mb-28">
+                      <div class="d-flex-row justify-content-between mb-2">
+                        <label class="txt-subheader" for="input-password-field">Password</label>
+                        <!-- <label class="txt-subheader txt-error">Incorrect password</label> -->
+                      </div>
+
+                      <div class="d-flex-row align-content-center">
+                        <input type="password" minlength="8" class="text-input form-text-input mr-0"
+                          id="input-password-field" placeholder="Enter your password">
+                        <span id="togglePassword-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-visible d-none">
+                          visibility
+                        </span>
+                        <span id="togglePassword-non-visible"
+                          class="material-symbols-rounded d-flex-row align-content-center password-non-visible d-block">
+                          visibility_off
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-check form-checkbox-input mb-28">
+                  <input class="form-check-input" type="checkbox" value="" id="checkReadStuff">
+                  <label class="form-check-label txt-body2" for="checkReadStuff">
+                    I have read and accept the <b>Terms and Conditions </b> and <b>Privacy Policy</b>
+                  </label>
+                </div>
+                <!-- progress bar -->
+                <div class="progress mt-0 mb-16">
+                  <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+                <!-- end-progress -->
+              </div>
+            </div>
+            <!-- input forms -->
+
+
+
+            <!-- continue button -->
+            <div class="d-flex-row signup-action-section mb-28 w-100">
+              <button class="btn btn-primary btn-sec btn-login-continue m-auto">Prev</button>
+              <button class="btn btn-primary btn-main btn-login-continue m-auto">Next</button>
+            </div>
+
+            <!-- signup link -->
+            <div class="login-signup-navigator text-center">
+              <a href="#"><label class="txt-subheading clr-primary">Already have an account?<b class="clr-primary">
+                    Login here</b></label></a>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- left side - image -->
+        <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-7 col-sm-7 col-xs-12 login-image-container"
+          style="background-color: #333333;">
+          <img class="w-100" src="images/signup-image.png">
+        </div>
+
+      </div>
+      <!-- end signup container-- -->
+
+      <!-- Search equipment categories-->
+      <h2 class="component-caption">equipment category page</h2>
+      <!-- breadcrumbs -->
+      <h2 class="component-caption">breadcrumb</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item" aria-current="page"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Equipment</li>
+          <!-- <li class="breadcrumb-item " aria-current="page">Library</li> -->
+        </ol>
+      </nav>
+      <!-- categories header -->
+      <h2 class="component-caption">categories header</h2>
+      <div class="d-flex-row align-items-center justify-content-between categories-header">
+        <label class="txt-headline">Browse Equipments</label>
+        <div class="d-flex-row align-items-center category-select">
+          <label class="txt-subheader mr-8">Direct search</label>
+          <div class="d-flex-row">
+            <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-equipment-category"
+              placeholder="Select category">
+
+              <option selected disabled class="clr-gray">-Select category-</option>
+              <option value="1">Auto Level</option>
+              <option value="2">Excavators & Dragline</option>
+              <option value="3">Backhoe & Loaders</option>
+
+            </select>
+            <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+              expand_more
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- categories grid -->
+      <h2 class="component-caption">categories grid</h2>
+      <div class="categories-container">
+        <!-- individual category card 1-->
+        <a href="#">
+          <div class="indiv-category">
+            <!-- image -->
+            <div class="bg-black img-container">
+              <img src="images/eq-cat-1.png">
+            </div>
+            <!-- name -->
+            <label class="txt-subheader m-auto">Auto Level</label>
+          </div>
+        </a>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <a href="#">
+          <div class="indiv-category">
+            <!-- image -->
+            <div class="bg-black img-container">
+              <img src="images/eq-cat-2.png">
+            </div>
+            <!-- name -->
+            <label class="txt-subheader m-auto">Excavators & Dragline</label>
+          </div>
+        </a>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 1-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-1.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Auto Level</label>
+        </div>
+        <!-- end indiv card -->
+        <!-- individual category card 2-->
+        <div class="indiv-category">
+          <!-- image -->
+          <div class="bg-black img-container">
+            <img src="images/eq-cat-2.png">
+          </div>
+          <!-- name -->
+          <label class="txt-subheader m-auto">Excavators & Dragline</label>
+        </div>
+        <!-- end indiv card -->
+
+      </div>
+      <!-- end category grid -->s
+      <!-- end category -->
+      <!-- categories header -->
+      <div style="clear: left;"></div>
+      <!-- featured suppliers -->
+      <hr>
+      <h2 class="component-caption">featured suppliers</h2>
+      <label class="txt-headline mb-16">Featured Suppliers</label>
+      <div class="featured-container bg-white rounded-main d-flex-col shadow-main w-100 p-2">
+        <div class="row my-4">
+          <!-- individual supplier -->
+          <a href="#" class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="#" class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="#" class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="#" class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+          <!-- individual supplier -->
+          <a href="#" class="col-2 col-md-3 col-lg-2 col-sm-3 col-xs-6 bg-white featured-supplier-card overflow-hidden">
+            <div>
+              <img class="rounded-main" src="images/equipment1.png">
+            </div>
+            <div class="supplier-name text-center w-100 p-2 ">
+              <label class="txt-title text-center"> Rabii Suppliers</label>
+            </div>
+          </a>
+
+        </div>
+      </div>
+      <!-- --featured suppliers -->
+
+      <!-- search results -->
+
+      <h2 class="component-caption">search page</h2>
+      <!-- vehicle filter -->
+      <!-- select vehicle type -->
+      <h2 class="component-caption">select vehicle type</h2>
+      <div class="vehicle-filter">
+        <div class="vehicle-filter-type mb-24">
+          <label class="txt-headline mb-16">Select vehicle type</label>
+          <div class="vehicle-type-selectors">
+            <!-- "active" class given to tab not selected -->
+            <!-- individual vehicle type -->
+            <div class="indiv-vehicle-type active">
+              <span class="material-symbols-rounded mb-8">
+                directions_car
+              </span>
+              <label class="txt-headline">Car</label>
+            </div>
+            <!-- -- -->
+            <!-- individual vehicle type -->
+            <div class="indiv-vehicle-type">
+              <span class="material-symbols-rounded mb-8">
+                directions_bus
+              </span>
+              <label class="txt-headline">Bus</label>
+            </div>
+            <!-- -- -->
+            <!-- individual vehicle type -->
+            <div class="indiv-vehicle-type active">
+              <span class="material-symbols-rounded mb-8">
+                two_wheeler
+              </span>
+              <label class="txt-headline">Bike</label>
+            </div>
+            <!-- -- -->
+          </div>
+        </div>
+        <div class="vehicle-filter-location">
+          <label class="txt-headline mb-16">Choose your location</label>
+          <div class="form location-form w-100">
+            <!-- pickup location picker -->
+            <div class="d-flex-row pickup-location-picker">
+              <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-email-field"
+                placeholder="Enter your address">
+
+                <option selected disabled class="clr-blk50">Pickup Location</option>
+                <option value="2">Kathmandu Baneshwor</option>
+                <option value="3">Kathmandu Anamnagar</option>
+
+              </select>
+              <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                expand_more
+              </span>
+            </div>
+            <!-- dropoff location picker -->
+            <div class="d-flex-row pickup-location-picker">
+              <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-email-field"
+                placeholder="Enter your address">
+
+                <option selected disabled class="clr-blk50">Dropoff Location</option>
+                <option value="2">Kathmandu Baneshwor</option>
+                <option value="3">Kathmandu Anamnagar</option>
+
+              </select>
+              <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                expand_more
+              </span>
+            </div>
+            <div class="d-flex-row align-content-center pickup-date-picker">
+              <input class="form-select text-input" type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+              <span class="material-symbols-rounded d-flex-row align-content-center month-icon d-block">
+                calendar_month
+              </span>
+            </div>
+
+            <button type="submit" class="btn btn-main align-content-center fit-content px-3 m-0">
+              <span class="material-symbols-rounded">
+                search
+              </span>
+              <label>Search</label>
+            </button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- filter and search results -->
+      <h2 class="component-caption">filter and results</h2>
+      <div class="filter-and-results w-100 bg-blue d-flex-row gap-5">
+        <!-- left filters -->
+        <div class="filter-nav">
+          <label class="txt-title">Filter</label>
+          <!-- category -->
+          <div class="address-form">
+            <div class="d-flex-row justify-content-xl-between mb-8">
+              <label class="txt-subheader" for="input-name-field">Category</label>
+              <!-- <label class="txt-subheader txt-error">Enter your address</label> -->
+            </div>
+            <div class="d-flex-row">
+              <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-email-field"
+                placeholder="Enter your address">
+
+                <option selected class="clr-gray">Backhow & Loaders</option>
+                <option value="2">Excavators & Dragline</option>
+                <option value="3">Driving License</option>
+
+              </select>
+              <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                expand_more
+              </span>
+            </div>
+
+          </div>
+          <!-- collapse menu individual -->
+          <div>
+            <div class="collapsible d-flex-row align-items-center w-100 mb-8">
+              <label class=" txt-subheader">Vehicle Type</label>
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </div>
+            <div class="content">
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Backhow & Loaders
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Backhow & Loaders
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Backhow & Loaders
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- end-menu indiv collapse -->
+          <!-- collapse menu individual -->
+          <div>
+            <div class="collapsible d-flex-row align-items-center w-100 mb-8">
+              <label class=" txt-subheader">Brand</label>
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </div>
+            <div class="content">
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Caterpillar
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Komatsu
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  XCMG
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- end-menu indiv collapse -->
+          <!-- collapse menu individual -->
+          <div>
+            <div class="collapsible d-flex-row align-items-center w-100 mb-8">
+              <label class=" txt-subheader">Model</label>
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </div>
+            <div class="content">
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  1
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  2
+                </label>
+              </div>
+
+            </div>
+          </div>
+          <!-- end-menu indiv collapse -->
+          <!-- collapse menu individual -->
+          <div>
+            <div class="collapsible d-flex-row align-items-center w-100 mb-8">
+              <label class=" txt-subheader">Brand</label>
+              <span class="material-symbols-rounded">
+                expand_more
+              </span>
+            </div>
+            <div class="content">
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Caterpillar
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  Komatsu
+                </label>
+              </div>
+              <!-- individual check item -->
+              <div class="form-check form-checkbox-input">
+                <input class="form-check-input" type="checkbox" value="" id="checkRememberMe">
+                <label class="form-check-label txt-body2" for="checkRememberMe">
+                  XCMG
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- end-menu indiv collapse -->
+
+        </div>
+        <!-- product list right -->
+        <div class="bg-white w-100 product-list-container">
+          <!-- header -->
+          <div class="d-flex-row align-items-center justify-content-between w-100 mb-16">
+            <label class="txt-headline">Equipment</label>
+            <div class="d-flex-row align-items-center sortby">
+              <label class="txt-subheader mr-8">Sort by</label>
+              <div class="d-flex-row">
+                <select class="form-select text-input form-text-input mr-0 rounded-main" id="input-equipment-category"
+                  placeholder="Select category">
+
+                  <option selected class="clr-gray">Price (low to high)</option>
+                  <option value="1">Price (high to low)</option>
+
+                </select>
+                <span class="material-symbols-rounded d-flex-row align-content-center down-arrow-icon">
+                  expand_more
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- product list -->
+          <div class="just-products-container">
+            <!-- individual product -->
+            <div class="indiv-product-card">
+              <div class="top-content w-100">
+                <!-- image -->
+                <div>
+                  <img src="images/prod-eq-1.png">
+                </div>
+                <!-- content -->
+                <div class="indiv-product-about">
+                  <div class="indiv-card-header">
+                    <label class="txt-title">Caterpillar | CAT</label>
+                    <label class="txt-body clr-blk50"> Model: 323D3</label>
+                  </div>
+                  <!-- description -->
+                  <div class="indiv-card-desc">
+                    <label class="txt-body2">Descripton</label>
+                    <p class="txt-searchdesc">
+                      Cat® Hydraulic Shovel technology delivers increased digging forces and greater productivity.
+                    </p>
+                  </div>
+                  <!-- features -->
+                  <div class="indiv-card-multiple-icons">
+                    <!-- <label class="txt-body2">Descripton</label> -->
+                    <div class="features-collection">
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          local_gas_station
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Diesel</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          speed
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">50kmpl</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          garage
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Ba 3 Pa 2000</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          settings
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Manual</label>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- rating -->
+                <div class="product-card-right">
+                  <div class="product-rating-container">
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-blk50 ">
+                      star
+                    </span>
+                  </div>
+                  <!-- individual feature -->
+                  <div class="indiv-feature">
+                    <span class="material-symbols-rounded clr-blk50">
+                      store
+                    </span>
+                    <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons-content w-100">
+                <label class="txt-subheader">Rs. 2500/day</label>
+                <a href="#">
+                  <button type="button" class="btn btn-primary btn-main fit-content">view details</button>
+                </a>
+              </div>
+
+            </div>
+            <!-- --individual product -->
+            <!-- individual product -->
+            <div class="indiv-product-card">
+              <div class="top-content w-100">
+                <!-- image -->
+                <div>
+                  <img src="images/prod-eq-1.png">
+                </div>
+                <!-- content -->
+                <div class="indiv-product-about">
+                  <div class="indiv-card-header">
+                    <label class="txt-title">Caterpillar | CAT</label>
+                    <label class="txt-body clr-blk50"> Model: 323D3</label>
+                  </div>
+                  <div class="indiv-card-desc">
+                    <label class="txt-body2">Descripton</label>
+                    <p class="txt-searchdesc">
+                      Cat® Hydraulic Shovel technology delivers increased digging forces and greater productivity.
+                    </p>
+                  </div>
+                  <div class="indiv-card-multiple-icons">
+                    <!-- <label class="txt-body2">Descripton</label> -->
+                    <div class="features-collection">
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          local_gas_station
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Diesel</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          speed
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">50kmpl</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          garage
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Ba 3 Pa 2000</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          settings
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Manual</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- rating -->
+                <div class="product-card-right">
+                  <div class="product-rating-container">
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-blk50 ">
+                      star
+                    </span>
+                  </div>
+                  <!-- individual feature -->
+                  <div class="indiv-feature">
+                    <span class="material-symbols-rounded clr-blk50">
+                      store
+                    </span>
+                    <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons-content w-100">
+                <label class="txt-subheader">Rs. 2500/day</label>
+                <a href="#">
+                  <button type="button" class="btn btn-primary btn-main fit-content">view details</button>
+                </a>
+              </div>
+
+            </div>
+            <!-- --individual product -->
+            <!-- individual product -->
+            <div class="indiv-product-card">
+              <div class="top-content w-100">
+                <!-- image -->
+                <div>
+                  <img src="images/prod-eq-1.png">
+                </div>
+                <!-- content -->
+                <div class="indiv-product-about">
+                  <div class="indiv-card-header">
+                    <label class="txt-title">Caterpillar | CAT</label>
+                    <label class="txt-body clr-blk50"> Model: 323D3</label>
+                  </div>
+                  <div class="indiv-card-desc">
+                    <label class="txt-body2">Descripton</label>
+                    <p class="txt-searchdesc">
+                      Cat® Hydraulic Shovel technology delivers increased digging forces and greater productivity.
+                    </p>
+                  </div>
+                  <div class="indiv-card-multiple-icons">
+                    <!-- <label class="txt-body2">Descripton</label> -->
+                    <div class="features-collection">
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          local_gas_station
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Diesel</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          speed
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">50kmpl</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          garage
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Ba 3 Pa 2000</label>
+                      </div>
+                      <!-- individual feature -->
+                      <div class="indiv-feature">
+                        <span class="material-symbols-rounded clr-blk50">
+                          settings
+                        </span>
+                        <label class="txt-searchdesc clr-blk50">Manual</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- rating -->
+                <div class="product-card-right">
+                  <div class="product-rating-container">
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-secondary">
+                      star
+                    </span>
+                    <span class="material-symbols-rounded clr-blk50 ">
+                      star
+                    </span>
+                  </div>
+                  <!-- individual feature -->
+                  <div class="indiv-feature">
+                    <span class="material-symbols-rounded clr-blk50">
+                      store
+                    </span>
+                    <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons-content w-100">
+                <label class="txt-subheader">Rs. 2500/day</label>
+                <a href="#">
+                  <button type="button" class="btn btn-primary btn-main fit-content">view details</button>
+                </a>
+              </div>
+
+            </div>
+            <!-- --individual product -->
+            <!-- pagination -->
+            <nav aria-label="Page navigation for products" class="pagination-nav w-100">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- -- pagination -->
+
+          </div>
+          <!-- -- product list -->
+        </div>
+        <!-- -- product list main -->
+      </div>
+      <!-- -- search results main-->
+      <!-- product page -->
+      <h2 class="component-caption">product page</h2>
+      <div class="w-100 bg-white product-page-container rounded-main shadow-main">
+        <!-- top-content -->
+        <div class="product-main-content w-100">
+          <!-- images -->
+          <div class="product-details-left">
+            <div class="main-image w-100">
+              <img src="images/tools1.png">
+            </div>
+            <div class="other-images">
+              <img src="images/eq-cat-1.png">
+              <img src="images/eq-cat-1.png">
+              <img src="images/eq-cat-1.png">
+              <img src="images/eq-cat-1.png">
+            </div>
+          </div>
+          <!-- main details -->
+          <div class="product-details-right">
+            <!-- title, model, brand and rating, supplier -->
+            <div class="product-page-header w-100">
+              <!-- title, model and brand -->
+              <div class="product-page-header-text d-flex-col gap-8">
+                <label class="txt-title">Caterpillar | CAT</label>
+                <div class="d-flex-row gap-16">
+                  <label class="txt-body clr-blk50"> Brand: CAT</label>
+                  <label class="txt-body clr-blk50"> Model: 323D3</label>
+                </div>
+              </div>
+
+              <!-- rating and supplier -->
+              <div class="product-page-header-topright d-flex-col gap-1">
+                <div class="product-rating-container">
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-secondary">
+                    star
+                  </span>
+                  <span class="material-symbols-rounded clr-blk50 ">
+                    star
+                  </span>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    store
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                </div>
+              </div>
+            </div>
+            <!-- desc -->
+            <div class="product-page-desc d-flex-col gap-0">
+              <label class="txt-body2">Description</label>
+              <p class="txt-body clr-blk50">Cat® Hydraulic Shovel technology delivers increased digging forces and
+                greater productivity. </p>
+            </div>
+
+            <!-- product features -->
+            <div class="product-page-multiple-icons">
+              <label class="txt-body2">Features</label>
+              <div class="features-collection">
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    local_gas_station
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Diesel</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    speed
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">50kmpl</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    garage
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Ba 3 Pa 2000</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    settings
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Manual</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- specifications -->
+            <div class="product-page-specifications">
+              <label class="txt-body2">Specifications</label>
+              <!-- list items -->
+              <ul>
+                <li>
+                  <label class="txt-body2">Product Type:</label>
+                  <label class="txt-body">Compact Wheel Loaders</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Brand::</label>
+                  <label class="txt-body">Caterpillar (CAT)</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Model:</label>
+                  <label class="txt-body">323D3</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Engine Capacity/Power:</label>
+                  <label class="txt-body">2500</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Lot No:</label>
+                  <label class="txt-body">25</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Color:</label>
+                  <label class="txt-body">Yellow</label>
+                </li>
+                <li>
+                  <label class="txt-body2">MakeYear:</label>
+                  <label class="txt-body">2020</label>
+                </li>
+                <li>
+                  <label class="txt-body2">Transmission:</label>
+                  <label class="txt-body">Manual - 4WD</label>
+                </li>
+              </ul>
+            </div>
+            <!-- price -->
+            <label class="txt-title">Approximate base price: 3500/day</label>
+            <!-- book rent button -->
+            <a href="#">
+              <button type="button" class="btn btn-primary btn-main fit-content btn-product-rent">Proceed to
+                rent</button>
+            </a>
+
+            <!-- suppliers info -->
+            <!-- product features -->
+            <div class="product-page-multiple-icons">
+              <label class="txt-body2">Supplier's Info</label>
+              <div class="features-collection">
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    store
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Rabii Suppliers</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    location_on
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">Anamnagar</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    call
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">9810987654</label>
+                </div>
+                <!-- individual feature -->
+                <div class="indiv-feature">
+                  <span class="material-symbols-rounded clr-blk50">
+                    mail
+                  </span>
+                  <label class="txt-searchdesc clr-blk50">rabiisuppliers@mail.com</label>
+                </div>
+              </div>
+            </div>
+            <div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- bottom content -->
+        <div class="product-more-details">
+          <!-- nav for tabs -->
+          <ul class="nav nav-tabs mb-28" id="productOtherDetails" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#extended-service-cost"
+                type="button" role="tab" aria-controls="home" aria-selected="true">Extended service cost</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#product-features"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">Product features</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#additional-info"
+                type="button" role="tab" aria-controls="contact" aria-selected="false">Additional info</button>
+            </li>
+          </ul>
+          <!-- tab contents -->
+          <div class="tab-content" id="myTabContent">
+            <!-- extended costs -->
+            <div class="tab-pane fade show active" id="extended-service-cost" role="tabpanel"
+              aria-labelledby="home-tab">extended service costs details</div>
+            <div class="tab-pane fade" id="product-features" role="tabpanel" aria-labelledby="profile-tab">product
+              features info</div>
+            <div class="tab-pane fade" id="additional-info" role="tabpanel" aria-labelledby="contact-tab">additional
+              info details</div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- end of product -->
+      <!-- booking confirmed -->
+
+      <h2 class="component-caption"> booking confrimed</h2>
+      <div
+        class="booking-done-container bg-white shadow-main rounded-main py-5 d-flex-col align-items-center justify-content-center gap-16">
+
+        <img src="images/booking-done.svg">
+        <label class="txt-headline">Booking Completed</label>
+        <label class="txt-subheader">Your booking number is <label class="clr-secondary">#123456</label></label>
+      </div>
+
+
+
+
+      <!----end main container-- -->
+    </div>
+
+
+
+
+    <footer class="p-5">
+
+      <div class="d-flex-row w-100 justify-content-between align-items-center">
+        <div class="footer-links">
+          <ul class="nav align-item-center justify-content-center">
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">About Us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Contact us</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">FAQ</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="empty.html" class="nav-link px-2 text-muted">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="contact-footer">
+          <div class="d-flex-row gap-3">
+            <a href="#"><i class="fa-brands fa-2xl fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-2xl fa-instagram"></i></a>
+          </div>
+          <div class="d-flex-row gap-3">
+            <a href="#">
+              <img src="images/App Store.png">
+            </a>
+            <a href="#">
+              <img src="images/Google Play.png">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-muted">© 2022 SahujiRental</p>
+    </footer>
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/919c05e0a8.js" crossorigin="anonymous"></script>
+    <!-- custom scripts -->
+    <script src="js/passwordVisibility.js"></script>
+    <script src="js/collapse.js"></script>
+    <!-- for date range picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <script src="js/date-range-picker.js"></script>
+
+  </body>
+
+</html>
