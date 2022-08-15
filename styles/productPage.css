@@ -33,6 +33,8 @@
   gap: 16px;
 }
 .other-images img {
+  width: 24%;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 .product-details-right {
