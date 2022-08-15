@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 .navbar-bot .nav-bot-link {
   font-style: normal;
@@ -279,6 +280,8 @@ footer .contact-footer {
   /* background-color: red; */
   /* width: 95px; */
 }
+
+/* for user logged in /not logged in (navbar) */
 .user-not-logged-in {
 }
 .user-logged-in {
@@ -310,15 +313,35 @@ footer .contact-footer {
 }
 .user-menu-item{
   position: absolute;
-  bottom: 0px;
+  bottom: -53px;
   right: 0px;
+  opacity: 0;
+  background-color: #fff;
+  border: #333333 solid 1px;
+  border-radius: 4px;
+  display: flex;
+  padding: 8px;
+  z-index: 1;
+  min-width: 120px;
+  align-items: center;
+  /* visibility: hidden; */
+}
+.user-menu:hover .user-menu-item, .user-menu-item:hover{
+  /* visibility: visible; */
   opacity: 1;
 }
-.user-menu:hover .user-menu-item{
-  /* display: block; */
-  opacity: 1;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  z-index: 100;
+.user-menu{
+  position: relative;
+  cursor: pointer;
+}
+.user-menu>div{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.user-menu-item a{
+  color: #333333;
+}
+.user-menu-item:hover a,.user-menu-item:hover span {
+  color: #DCB55A;
 }
