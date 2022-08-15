@@ -279,3 +279,46 @@ footer .contact-footer {
   /* background-color: red; */
   /* width: 95px; */
 }
+.user-not-logged-in {
+}
+.user-logged-in {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+}
+.user-logged-in img {
+  /* border: #43418A solid 2px; */
+  border-radius: 50%;
+  padding: 0;
+  outline: solid #43418A 2px;
+  background-color: #43418A;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+.user-menu, .user-menu>label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  cursor: pointer;
+  height: 44px;
+}
+.user-menu-item{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  opacity: 1;
+}
+.user-menu:hover .user-menu-item{
+  /* display: block; */
+  opacity: 1;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+}
